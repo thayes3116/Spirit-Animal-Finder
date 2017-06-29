@@ -1,0 +1,81 @@
+/*home.html*/
+#homeBody {	background: url(https://i.ytimg.com/vi/3sLcH6vwi2c/maxresdefault.jpg) no-repeat center center fixed;
+	background-size: cover;
+	font-weight: bold;
+	color:#dda252;
+}
+#homeHeader{
+	margin-bottom: 30px;
+}
+
+#toSurvey{
+	color:#571f77;
+	background-color: #dda252;
+}
+#toSurvey:hover{
+	color:#dda252;
+	background-color: #571f77;
+}
+/*surveyhtml*/
+#surveyBody {	background: url(http://karisamuels.com/wp-content/uploads/2016/01/Spirit_animal.jpg) no-repeat center center fixed;
+	background-size: cover;
+	font-weight: bold;
+	color:#ffffff;
+}
+#pagetitle{
+	margin-bottom: 50px;	
+}
+.userInfo{
+	width:250px;
+	padding:10px;
+	margin:5px 0px;
+	color:#571f77;
+	background-color: #dda252;
+}
+#searchlabel{
+	margin-top: 7px;
+	font-size: 22px;
+	color:#ffffff;
+}
+.surveyquestion{
+	font-size: 22px;
+}
+#submitAnswers{
+	margin-top: 40px;
+	background-color: #deb690;
+	color:#298bc7;
+	height:50px;
+	width:200px;
+}
+.dropdown-toggle{
+	background-color: #deb690;
+	color:#298bc7;
+	width:200px;
+	height: 50px;
+	margin-bottom: 15px;
+}
+.dropdown-toggle:hover{
+	background-color: #298bc7;
+	color:#deb690;	
+}
+.dropdown-toggle:active{
+	background-color: #298bc7;
+	color:#deb690;	
+}
+.dropdown-menu{
+	width:300px;
+	background-color: #deb690;
+	color:#298bc7;
+}
+.surveyvalues {
+	color:#298bc7;
+	background-color: #deb690;
+}
+.modal{
+	color:black;
+}
+#animalImg{
+	width:100%;
+}
+
+
