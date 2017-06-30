@@ -7,7 +7,7 @@ var friendsArray =[
 {
 	"name":"Wolf",
   	"photo":"http://www.spiritanimal.info/wp-content/uploads/Wolf-Spirit-Animal-2.jpg",
-  	"scores":[4,1,4,4,5,1,2,5,4,1]
+  	"scores":[4,1,2,2,5,1,2,5,4,1]
 },
 {
 	"name":"Bear",
@@ -27,7 +27,7 @@ var friendsArray =[
 {
 	"name":"Panda",
   	"photo":"http://www.spiritanimal.info/wp-content/uploads/Panda-Spirit-Animal-1.jpg",
-  	"scores":[4,1,4,4,5,1,2,5,4,1]
+  	"scores":[4,1,1,3,5,1,2,5,4,1]
 },
 {
 	"name":"Leopard",

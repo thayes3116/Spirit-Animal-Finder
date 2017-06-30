@@ -1,10 +1,10 @@
 $(document).ready(function(){
-	
+	//set global variables
 	var a1 = 0, a2 =0,a3 = 0, a4 = 0, a5 = 0, a6 = 0, a7 = 0, a8 = 0, a9 = 0, a10 = 0;
 	var scoreArray = [];
 	var userName;
     var userPhoto;
-
+    //on click value capture for survey
 	$("#quest1 li").on("click", function(){
 		a1 = $(this).val();				
 	});
@@ -35,16 +35,27 @@ $(document).ready(function(){
 	$("#quest10 li").on("click", function(){
 		a10 = $(this).val();				
 	});
-
+	//on click submit button from home
 	$("#toSurvey").on("click", function(){
+		if($("#userPhoto").val()!=='' || $("#userName").val() !== ''){
 			userName = $("#userName").val().trim();
 			userPhoto = $("#userPhoto").val().trim();	
 			sessionStorage.setItem("userName", userName);
 			sessionStorage.setItem("userPhoto", userPhoto);		
 			$("#userName").val('');
 			$("#userPhoto").val('');
+			window.location.href="/survey";
+			showPhoto();
+		}else{
+			alert("Please enter user name and a link to your profile photo")
+		}	
 	});
 
+	function showPhoto(){
+		var userPhoto = sessionStorage.getItem("userPhoto");
+		var photo = $("<img>").attr("src", userPhoto)
+		$("#userDiv").html(photo);
+	}
 	$("#backToHome").on("click", function(){
 		$("#userName").val('');
 		$("#userPhoto").val('');
