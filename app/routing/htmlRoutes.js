@@ -1,5 +1,7 @@
-const path = require('path');
+//require path
+var path = require('path');
 
+//module export
 module.exports = function(app) {
 
 	// connects to survey page 

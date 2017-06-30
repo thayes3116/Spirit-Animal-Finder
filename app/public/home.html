@@ -1,62 +1,64 @@
 <!DOCTYPE html>
 <html>
-  	<head>
 
-	    <meta charset="UTF-8">
+<head>
 
-	    <title>Friend Finder Home</title>
-		
-		<!--Link to bootstrap-->    
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-		<script type="text/javascript" src="/public/app.js"></script>
+    <meta charset="UTF-8">
 
-		<link rel="stylesheet" type="text/css" href="/public/style.css">
+    <title>Friend Finder Home</title>
 
- 	</head>
+    <!--Link to bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-	<body id="homeBody">
-	  	
-		<div class="container-fluid" align="center">
-			
-			<div class="row">
-			    <div class="text-center">
-					<h1 id="homeHeader">Spirit Animal Finder</h1>
-			  		<h3>Want to find your spirit animal?</h3>  		
-				</div>
-			</div>
+    <!--Link to jQuery library-->
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 
-			<div class="row">
-				 <label id="searchlabel">Enter Your Information Here</label>
-			</div>
+    <!--Link to external js file-->
+    <script type="text/javascript" src="/public/app.js"></script>
 
-			<div class="row ">
-				
-				<div class=col-sm-4>	          
-		            <input class="userInfo" type="text" placeholder="Your Name" id="userName">
-	            </div>
-				<div class=col-sm-4>
-				</div>
-	            <div class=col-sm-4>
-		            <input class="userInfo " type="text" placeholder="http://linktoyourphoto.jpg" id="userPhoto">
-		        </div> 
-	    	</div> 
-				
-					
-						
-				        <button class="btn btn-default" id="toSurvey">Take the Survey</button>
-				       				     
-			   
+    <!--Link to external css file-->
+    <link rel="stylesheet" type="text/css" href="/public/style.css">
 
-			
-		</div>
+</head>
+<!--Home page body-->
 
-		 <div class="navbar navbar-default navbar-fixed-bottom">
-		    <div class="container"  align="center">
-		      <p class="navbar-text">© 2017 - Timothy Hayes	          
-		      </p>
-		    </div>  	     
-	    </div>
+<body id="homeBody">
 
-	</body>
+    <div class="container-fluid" align="center">
+
+        <div class="row">
+            <div class="text-center">
+                <h1 id="homeHeader">Spirit Animal Finder</h1>
+                <h3>Want to find your spirit animal?</h3>
+            </div>
+        </div>
+        <!--User Input area-->
+        <div class="row">
+            <label id="searchlabel">Enter Your Information Here</label>
+        </div>
+
+        <div class="row ">
+           <div class=col-sm-4>
+                <input class="userInfo" type="text" placeholder="Your Name" id="userName">
+            </div>
+            <div class=col-sm-4>
+            </div>
+            <div class=col-sm-4>
+                <input class="userInfo " type="text" placeholder="http://linktoyourphoto.jpg" id="userPhoto">
+            </div>
+        </div>
+
+       <!--Submit Button-->
+        <button class="btn btn-default" id="toSurvey">Take the Survey</button>
+    </div>
+
+    <div class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container" align="center">
+            <p class="navbar-text">© 2017 - Timothy Hayes
+            </p>
+        </div>
+    </div>
+
+</body>
+
 </html>
