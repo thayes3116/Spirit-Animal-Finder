@@ -23,35 +23,48 @@
 	<div class=container align="center">
 		<div id="survey">
 			<h1 id="pagetitle">Spirit Animal Survey</h1>
-			<div class="row">
-				<div class = "col-sm-4">
-					<form id="newAnimal">
-	                    <label id="searchlabel" for="newhero">Enter Your Information Here</label>
-	                    <br>
-	                    <br>
-	                    <input class="userInfo" type="text" placeholder="Your Name" id="userName">
-	                    <br>
-	                    <input class="userInfo" type="text" placeholder="Link to Your Photo" id="userPhoto">
-	                    <br>
-	                    <br>	                    
-	               </form>
-	               <button class="btn btn-default" id="submitAnswers">Submit Your Answers</button>
-	            </div>
-	        <div class="col-sm-1" align="center"> 
-	        </div>    
-	        <div class="col-sm-7" align="center">    	
+				<div class="row" align="center">
+					<div id="userDiv">
+
+					</div>
+				</div>        	
 				<!-- Question 1 -->
 			
 				<div class="row">
-				  	<h4 class="surveyquestion">You are down-to-earth and not a dreamer with your head in the clouds</h4>
 
-						<div class="btn-group">
+					<div class="col-sm-6">
 
+					  	<h4 class="surveyquestion">You are down to earth</h4>
+
+							<div class="btn-group">
+
+								  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								    Your Rating <span class="caret"></span>
+								  </button>
+
+								  <ul class="dropdown-menu" id="quest1">
+								    <li value="5"><a class="surveyvalues" >5 Strongly Agree</a></li>
+								    <li role="separator" class="divider"></li>
+								    <li value="4"><a class="surveyvalues">4 Agree</a></li>
+								    <li role="separator" class="divider"></li>
+								    <li value="3"><a class="surveyvalues">3 Neutral</a></li>
+								    <li role="separator" class="divider"></li>
+								    <li value="2"><a class="surveyvalues">2 Disagree</a></li>
+								    <li role="separator" class="divider"></li>
+								    <li value="1"><a class="surveyvalues">1 Strongly Disagree</a></li>
+								  </ul>
+							</div>
+					</div>
+						
+			
+				  	<!-- Question 2 -->
+					<div class="col-sm-6">
+					  	<h4 class="surveyquestion">You attack problems head on</h4> 		
+							<div class="btn-group">
 							  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							    Your Rating <span class="caret"></span>
 							  </button>
-
-							  <ul class="dropdown-menu" id="quest1">
+							  <ul class="dropdown-menu" id="quest2">
 							    <li value="5"><a class="surveyvalues" >5 Strongly Agree</a></li>
 							    <li role="separator" class="divider"></li>
 							    <li value="4"><a class="surveyvalues">4 Agree</a></li>
@@ -62,191 +75,186 @@
 							    <li role="separator" class="divider"></li>
 							    <li value="1"><a class="surveyvalues">1 Strongly Disagree</a></li>
 							  </ul>
-
-						</div>
-				</div>		
-			
-				  	<!-- Question 2 -->
-				<div class=row>
-				  	<h4 class="surveyquestion">You attack problems head on</h4> 		
-						<div class="btn-group">
-						  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    Your Rating <span class="caret"></span>
-						  </button>
-						  <ul class="dropdown-menu" id="quest2">
-						    <li value="5"><a class="surveyvalues" >5 Strongly Agree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="4"><a class="surveyvalues">4 Agree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="3"><a class="surveyvalues">3 Neutral</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="2"><a class="surveyvalues">2 Disagree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="1"><a class="surveyvalues">1 Strongly Disagree</a></li>
-						  </ul>
-						</div>
-				</div>  
+							</div>
+					</div> 
+				</div> 
 					<!-- Question 3 -->
 				<div class=row>
-				  	<h4 class="surveyquestion">You are adventurous and prefer new experiences</h4> 		
-						<div class="btn-group">
-						  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    Your Rating <span class="caret"></span>
-						  </button>
-						  <ul class="dropdown-menu" id="quest3">
-						    <li value="5"><a class="surveyvalues" >5 Strongly Agree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="4"><a class="surveyvalues">4 Agree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="3"><a class="surveyvalues">3 Neutral</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="2"><a class="surveyvalues">2 Disagree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="1"><a class="surveyvalues">1 Strongly Disagree</a></li>
-						  </ul>
-						</div>
-				</div>  
+					<div class="col-sm-6">
+					  	<h4 class="surveyquestion">You are adventurous and prefer new experiences</h4> 		
+							<div class="btn-group">
+							  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Your Rating <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu" id="quest3">
+							    <li value="5"><a class="surveyvalues" >5 Strongly Agree</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="4"><a class="surveyvalues">4 Agree</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="3"><a class="surveyvalues">3 Neutral</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="2"><a class="surveyvalues">2 Disagree</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="1"><a class="surveyvalues">1 Strongly Disagree</a></li>
+							  </ul>
+							</div>
+					</div>	
+				 
 					<!-- Question 4 -->
-				<div class=row>
-				  	<h4 class="surveyquestion">You are often in short term relationships rather than long term</h4> 		
-						<div class="btn-group">
-						  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    Your Rating <span class="caret"></span>
-						  </button>
-						   <ul class="dropdown-menu" id="quest4">
-						    <li value="5"><a class="surveyvalues" >5 Strongly Agree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="4"><a class="surveyvalues">4 Agree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="3"><a class="surveyvalues">3 Neutral</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="2"><a class="surveyvalues">2 Disagree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="1"><a class="surveyvalues">1 Strongly Disagree</a></li>
-						  </ul>
-						</div>
-				</div>
+					<div class="col-sm-6">
+					  	<h4 class="surveyquestion">You are often in short term relationships rather than long term</h4> 		
+							<div class="btn-group">
+							  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Your Rating <span class="caret"></span>
+							  </button>
+							   <ul class="dropdown-menu" id="quest4">
+							    <li value="5"><a class="surveyvalues" >5 Strongly Agree</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="4"><a class="surveyvalues">4 Agree</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="3"><a class="surveyvalues">3 Neutral</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="2"><a class="surveyvalues">2 Disagree</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="1"><a class="surveyvalues">1 Strongly Disagree</a></li>
+							  </ul>
+							</div>
+					</div>
+				</div>	
 				  	<!-- Question 5 -->
 				<div class=row>
-				  	<h4 class="surveyquestion">You are more creative than methodical</h4> 		
-						<div class="btn-group">
-						  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    Your Rating <span class="caret"></span>
-						  </button>
-						  <ul class="dropdown-menu" id="quest5">
-						    <li value="5"><a class="surveyvalues" >5 Strongly Agree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="4"><a class="surveyvalues">4 Agree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="3"><a class="surveyvalues">3 Neutral</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="2"><a class="surveyvalues">2 Disagree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="1"><a class="surveyvalues">1 Strongly Disagree</a></li>
-						  </ul>
-						</div>
-				</div>
+					<div class="col-sm-6">
+					  	<h4 class="surveyquestion">You are more creative than methodical</h4> 		
+							<div class="btn-group">
+							  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Your Rating <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu" id="quest5">
+							    <li value="5"><a class="surveyvalues" >5 Strongly Agree</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="4"><a class="surveyvalues">4 Agree</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="3"><a class="surveyvalues">3 Neutral</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="2"><a class="surveyvalues">2 Disagree</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="1"><a class="surveyvalues">1 Strongly Disagree</a></li>
+							  </ul>
+							</div>
+					</div>	
+				
 				  	<!-- Question 6 -->
-				<div class=row>
-				  	<h4 class="surveyquestion">You follow you heart more then your head</h4> 		
-						<div class="btn-group">
-						  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    Your Rating <span class="caret"></span>
-						  </button>
-						 <ul class="dropdown-menu" id="quest6">
-						    <li value="5"><a class="surveyvalues" >5 Strongly Agree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="4"><a class="surveyvalues">4 Agree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="3"><a class="surveyvalues">3 Neutral</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="2"><a class="surveyvalues">2 Disagree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="1"><a class="surveyvalues">1 Strongly Disagree</a></li>
-						  </ul>
-						</div>
+				
+					<div class="col-sm-6">
+					  	<h4 class="surveyquestion">You follow you heart more then your head</h4> 		
+							<div class="btn-group">
+							  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Your Rating <span class="caret"></span>
+							  </button>
+							 <ul class="dropdown-menu" id="quest6">
+							    <li value="5"><a class="surveyvalues" >5 Strongly Agree</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="4"><a class="surveyvalues">4 Agree</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="3"><a class="surveyvalues">3 Neutral</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="2"><a class="surveyvalues">2 Disagree</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="1"><a class="surveyvalues">1 Strongly Disagree</a></li>
+							  </ul>
+							</div>
+					</div>	
 				</div> 
 				 	<!-- Question 7 -->
 				<div class=row>
-				  	<h4 class="surveyquestion">You like to plan rather be spontaneous</h4> 		
-						<div class="btn-group">
-						  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    Your Rating <span class="caret"></span>
-						  </button>
-						   <ul class="dropdown-menu" id="quest7">
-						    <li value="5"><a class="surveyvalues" >5 Strongly Agree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="4"><a class="surveyvalues">4 Agree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="3"><a class="surveyvalues">3 Neutral</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="2"><a class="surveyvalues">2 Disagree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="1"><a class="surveyvalues">1 Strongly Disagree</a></li>
-						  </ul>
-						</div>
-				</div> 
+					<div class="col-sm-6">
+					  	<h4 class="surveyquestion">You like to plan rather be spontaneous</h4> 		
+							<div class="btn-group">
+							  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Your Rating <span class="caret"></span>
+							  </button>
+							   <ul class="dropdown-menu" id="quest7">
+							    <li value="5"><a class="surveyvalues" >5 Strongly Agree</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="4"><a class="surveyvalues">4 Agree</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="3"><a class="surveyvalues">3 Neutral</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="2"><a class="surveyvalues">2 Disagree</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="1"><a class="surveyvalues">1 Strongly Disagree</a></li>
+							  </ul>
+							</div>
+					</div>		
+				
 				 	<!-- Question 8 -->
-				<div class=row>
-				  	<h4 class="surveyquestion">Winning is the mosst important thing</h4> 		
-						<div class="btn-group">
-						  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    Your Rating <span class="caret"></span>
-						  </button>
-						  <ul class="dropdown-menu" id="quest8">
-						    <li value="5"><a class="surveyvalues" >5 Strongly Agree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="4"><a class="surveyvalues">4 Agree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="3"><a class="surveyvalues">3 Neutral</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="2"><a class="surveyvalues">2 Disagree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="1"><a class="surveyvalues">1 Strongly Disagree</a></li>
-						  </ul>
-						</div>
+				
+					<div class="col-sm-6">
+					  	<h4 class="surveyquestion">Winning is the most important thing</h4> 		
+							<div class="btn-group">
+							  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Your Rating <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu" id="quest8">
+							    <li value="5"><a class="surveyvalues" >5 Strongly Agree</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="4"><a class="surveyvalues">4 Agree</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="3"><a class="surveyvalues">3 Neutral</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="2"><a class="surveyvalues">2 Disagree</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="1"><a class="surveyvalues">1 Strongly Disagree</a></li>
+							  </ul>
+							</div>
+					</div>		
 				</div> 
 				 	<!-- Question 9 -->
 				<div class=row>
-				  	<h4 class="surveyquestion">I prefer spending time alone over spending time with friends</h4> 		
-						<div class="btn-group">
-						  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    Your Rating <span class="caret"></span>
-						  </button>
-						 <ul class="dropdown-menu" id="quest9">
-						    <li value="5"><a class="surveyvalues" >5 Strongly Agree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="4"><a class="surveyvalues">4 Agree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="3"><a class="surveyvalues">3 Neutral</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="2"><a class="surveyvalues">2 Disagree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="1"><a class="surveyvalues">1 Strongly Disagree</a></li>
-						  </ul>
-						</div>
-				</div> 
+					<div class="col-sm-6">
+					  	<h4 class="surveyquestion">You prefer spending time alone</h4> 		
+							<div class="btn-group">
+							  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Your Rating <span class="caret"></span>
+							  </button>
+							 <ul class="dropdown-menu" id="quest9">
+							    <li value="5"><a class="surveyvalues" >5 Strongly Agree</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="4"><a class="surveyvalues">4 Agree</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="3"><a class="surveyvalues">3 Neutral</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="2"><a class="surveyvalues">2 Disagree</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="1"><a class="surveyvalues">1 Strongly Disagree</a></li>
+							  </ul>
+							</div>
+					</div>	
+				
 				 	<!-- Question 10 -->
-				<div class=row>
-				  	<h4 class="surveyquestion">You find it difficult to control your temper</h4> 		
-						<div class="btn-group">
-						  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    Your Rating <span class="caret"></span>
-						  </button>
-						   <ul class="dropdown-menu" id="quest10">
-						    <li value="5"><a class="surveyvalues" >5 Strongly Agree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="4"><a class="surveyvalues">4 Agree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="3"><a class="surveyvalues">3 Neutral</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="2"><a class="surveyvalues">2 Disagree</a></li>
-						    <li role="separator" class="divider"></li>
-						    <li value="1"><a class="surveyvalues">1 Strongly Disagree</a></li>
-						  </ul>
-						</div>
-				</div>				
-			</div>	
+					<div class="col-sm-6">
+					  	<h4 class="surveyquestion">It is difficult to control your temper</h4> 		
+							<div class="btn-group">
+							  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							    Your Rating <span class="caret"></span>
+							  </button>
+							   <ul class="dropdown-menu" id="quest10">
+							    <li value="5"><a class="surveyvalues" >5 Strongly Agree</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="4"><a class="surveyvalues">4 Agree</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="3"><a class="surveyvalues">3 Neutral</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="2"><a class="surveyvalues">2 Disagree</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li value="1"><a class="surveyvalues">1 Strongly Disagree</a></li>
+							  </ul>
+							</div>
+					</div>
+				</div>					
+				<div class="row">
+		               <button class="btn btn-default" id="submitAnswers">Submit Your Answers</button>
+		        </div>	
 		</div>			
 	</div>   
   </div>
@@ -260,7 +268,11 @@
 	      <div class="modal-body">	
 	      </div>
 	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      	<a href="/">
+	      	<button id="backToHome" type="button" class="btn btn-default" >Back to Home Page</button>
+	      	</a>
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Retake Survey</button>
+
 	      </div>
 	    </div>
 	  </div>

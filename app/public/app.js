@@ -2,8 +2,8 @@ $(document).ready(function(){
 	
 	var a1 = 0, a2 =0,a3 = 0, a4 = 0, a5 = 0, a6 = 0, a7 = 0, a8 = 0, a9 = 0, a10 = 0;
 	var scoreArray = [];
-	
-	
+	var userName;
+    var userPhoto;
 
 	$("#quest1 li").on("click", function(){
 		a1 = $(this).val();				
@@ -35,22 +35,36 @@ $(document).ready(function(){
 	$("#quest10 li").on("click", function(){
 		a10 = $(this).val();				
 	});
-	
-	$("#submitAnswers").on("click", function(){
 
+	$("#toSurvey").on("click", function(){
+			userName = $("#userName").val().trim();
+			userPhoto = $("#userPhoto").val().trim();	
+			sessionStorage.setItem("userName", userName);
+			sessionStorage.setItem("userPhoto", userPhoto);		
+			$("#userName").val('');
+			$("#userPhoto").val('');
+	});
+
+	$("#backToHome").on("click", function(){
+		$("#userName").val('');
+		$("#userPhoto").val('');
+	});
+
+	$("#submitAnswers").on("click", function(){
+		var userName = sessionStorage.getItem('userName');
+		var userPhoto = sessionStorage.getItem("userPhoto");
 		var scoreArray = [a1,a2,a3,a4,a5,a6,a7,a8,a9,a10];
-		var userName = $("#userName").val().trim();
-		var userPhoto = $("#userPhoto").val().trim();
 		var animalObject = {
 			"name": userName,
 			"photo": userPhoto,
 			"scores": scoreArray
 		};
+		console.log(animalObject)
+
 		
 		$.post("/api/friends", animalObject, function(){
 
-			$("#userName").val('');
-			$("#userPhoto").val('');
+			
 
 			a1 = 0, a2 =0, a3 = 0, a4 = 0, a5 = 0, a6 = 0, a7 = 0, a8 = 0, a9 = 0, a10 = 0;	
 
@@ -74,5 +88,6 @@ $(document).ready(function(){
 			$('.modal-body').append(photoDiv);
 		});		
 	});
+
 });
 	
