@@ -32,8 +32,17 @@
 .userInfo{
 	width:250px;
 	padding:10px;
+	margin: 15px;
 	color:#571f77;
 	background-color: #83e2fe;
+	border: none;
+}
+#pictureDiv{
+	height: 100px:
+	width:100px;
+}
+li:hover{
+	background-color: #deb690; 
 }
 #searchlabel{
 	margin-top: 7px;

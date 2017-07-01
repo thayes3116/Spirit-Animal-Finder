@@ -38,18 +38,20 @@ $(document).ready(function() {
             $("#userPhoto").val('');
             window.location.href = "/survey";
             $("#searchlabel").html("Enter Your Information Here");
-            // showPhoto();
+            showPhoto();
         } else {
             $("#searchlabel").html("Please enter your name and a link to your profile photo to continue");           
         }
     });
 
-    // function showPhoto(){
-    //     console.log("click")
-    // 	// var userPhoto = sessionStorage.getItem("userPhoto");
-    // 	// var photo = $("<img>").attr("src", userPhoto);
-    // 	 $("#userDiv").html("fuck you");
-    // }
+        function showPhoto(){
+            console.log("click")
+        	var userPhoto = sessionStorage.getItem("userPhoto");
+            var userName = sessionStorage.getItem("userName");
+        	$("#pictureDiv").attr("src", userPhoto);
+             var welcome = $("<h3>").text("welcome " + userName)
+        	$("#userDiv").html(welcome);
+        }
 
     //home page submit button
     $("#submitAnswers").on("click", function() {

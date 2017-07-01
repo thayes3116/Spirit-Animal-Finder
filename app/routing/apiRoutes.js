@@ -35,8 +35,7 @@ module.exports = function(app) {
                 }
                 sum = 0;
             }
-           
-            
+                      
             var match = friends[closestNumber]
 
             friends.push(req.body);
