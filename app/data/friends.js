@@ -6,7 +6,7 @@ var friendsArray = [{
     {
         "name": "Wolf",
         "photo": "http://www.spiritanimal.info/wp-content/uploads/Wolf-Spirit-Animal-2.jpg",
-        "scores": [4, 1, 2, 2, 5, 1, 2, 5, 4, 1]
+        "scores": [4, 1, 2, 2, 5, 1, 2, 5, 4, 1] 
     },
     {
         "name": "Bear",
@@ -21,7 +21,7 @@ var friendsArray = [{
     {
         "name": "Snake",
         "photo": "https://i1.wp.com/gostica.com/wp-content/uploads/2016/12/spirit-animal-snake.jpg?fit=600%2C315",
-        "scores": [5, 1, 4, 4, 5, 1, 2, 5, 4, 1]
+        "scores": [5, 1, 4, 4, 5, 1, 2, 5, 4, 2]
     },
     {
         "name": "Panda",
@@ -31,7 +31,7 @@ var friendsArray = [{
     {
         "name": "Leopard",
         "photo": "https://vignette4.wikia.nocookie.net/spiritanimals/images/8/89/UrazaATT.png/revision/latest?cb=20140622024305",
-        "scores": [3, 1, 4, 4, 5, 1, 2, 5, 4, 1]
+        "scores": [3, 1, 4, 4, 5, 2, 2, 5, 4, 1]
     },
     {
         "name": "Honey Badger",
@@ -41,12 +41,12 @@ var friendsArray = [{
     {
         "name": "Owl",
         "photo": "http://www.spiritanimal.info/pictures/owl/Owl-Spirit-Animal-4.jpg",
-        "scores": [1, 1, 4, 4, 5, 1, 2, 5, 4, 1]
+        "scores": [1, 1, 4, 4, 3, 1, 2, 5, 4, 1]
     },
     {
         "name": "Deer",
         "photo": "https://www.wildgratitude.com/wp-content/uploads/2014/06/deer-spirit-animal.jpg",
-        "scores": [1, 1, 4, 4, 5, 1, 2, 5, 4, 1]
+        "scores": [1, 1, 4, 4, 5, 1, 2, 1, 4, 1]
     },
 ];
 module.exports = friendsArray;

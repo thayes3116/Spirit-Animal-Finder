@@ -29,24 +29,18 @@ module.exports = function(app) {
                 for (var j = 0; j < scoreArray.length; j++) {
                     sum += (Math.abs(scoreArray[j] - friends[i].scores[j]));
                 }
-
-                sumArray.push(sum);
-                sum = 0;
-            }
-
-            //checking for the closest match
-            for (var i = 0; i < sumArray.length; i++) {
-
-                if (sumArray[i] < closest) {
-                    closest = sumArray[i];
+                if (sum < closest) {
+                    closest = sum;
                     closestNumber = i;
                 }
+                sum = 0;
             }
-
+           
+            
             var match = friends[closestNumber]
 
             friends.push(req.body);
-
+            
             var string = JSON.stringify(match)
 
             //send back app.js

@@ -1,51 +1,32 @@
 //document ready
 $(document).ready(function() {
-    //set global variables
-    var a1 = 0,
-        a2 = 0,
-        a3 = 0,
-        a4 = 0,
-        a5 = 0,
-        a6 = 0,
-        a7 = 0,
-        a8 = 0,
-        a9 = 0,
-        a10 = 0;
-    var scoreArray = [];
-    var userName;
-    var userPhoto;
+    
+    //set global variables    
+    var scoreArray = [],
+        userName,
+        userPhoto,
+        answers = {
+            answer1 : 0,
+            answer2 : 0,
+            answer3 : 0,
+            answer4 : 0,
+            answer5 : 0,
+            answer6 : 0,
+            answer7 : 0,
+            answer8 : 0,
+            answer9 : 0,
+            answer10 : 0
+        };
 
-    //on click value capture for survey
-    $("#quest1 li").on("click", function() {
-        a1 = $(this).val();
+    // //on click value capture for survey 
+    $("li").on("click", function(){
+        for(var i = 1 ; i < 11 ; i++){
+            if ($(this).parent().attr("id") == "quest"+i){
+                answers['answer' + i] = $(this).val()             
+            }
+        }    
     });
-    $("#quest2 li").on("click", function() {
-        a2 = $(this).val();
-    });
-    $("#quest3 li").on("click", function() {
-        a3 = $(this).val();
-    });
-    $("#quest4 li").on("click", function() {
-        a4 = $(this).val();
-    });
-    $("#quest5 li").on("click", function() {
-        a5 = $(this).val();
-    });
-    $("#quest6 li").on("click", function() {
-        a6 = $(this).val();
-    });
-    $("#quest7 li").on("click", function() {
-        a7 = $(this).val();
-    });
-    $("#quest8 li").on("click", function() {
-        a8 = $(this).val();
-    });
-    $("#quest9 li").on("click", function() {
-        a9 = $(this).val();
-    });
-    $("#quest10 li").on("click", function() {
-        a10 = $(this).val();
-    });
+      
     //on click submit button from home
     $("#toSurvey").on("click", function() {
         if ($("#userPhoto").val() !== '' || $("#userName").val() !== '') {
@@ -56,29 +37,27 @@ $(document).ready(function() {
             $("#userName").val('');
             $("#userPhoto").val('');
             window.location.href = "/survey";
+            $("#searchlabel").html("Enter Your Information Here");
             showPhoto();
         } else {
-            alert("Please enter user name and a link to your profile photo")
+            $("#searchlabel").html("Please enter your name and a link to your profile photo to continue");           
         }
     });
 
-    // function showPhoto(){
-    // 	var userPhoto = sessionStorage.getItem("userPhoto");
-    // 	var photo = $("<img>").attr("src", userPhoto)
-    // 	$("#userDiv").html(photo);
-    // }
-
-    //back to home button
-    $("#backToHome").on("click", function() {
-        $("#userName").val('');
-        $("#userPhoto").val('');
-    });
+    function showPhoto(){
+        console.log("click")
+    	// var userPhoto = sessionStorage.getItem("userPhoto");
+    	// var photo = $("<img>").attr("src", userPhoto);
+    	 $("#userDiv").html("fuck you");
+    }
 
     //home page submit button
     $("#submitAnswers").on("click", function() {
         var userName = sessionStorage.getItem('userName');
         var userPhoto = sessionStorage.getItem("userPhoto");
-        var scoreArray = [a1, a2, a3, a4, a5, a6, a7, a8, a9, a10];
+        for ( var i = 1 ; i < 11 ; i++){
+            scoreArray.push(answers["answer"+ i])
+        }           
         var animalObject = {
             "name": userName,
             "photo": userPhoto,
@@ -87,7 +66,20 @@ $(document).ready(function() {
 
         //post to apiRoute.js		
         $.post("/api/friends", animalObject, function() {
-            a1 = 0, a2 = 0, a3 = 0, a4 = 0, a5 = 0, a6 = 0, a7 = 0, a8 = 0, a9 = 0, a10 = 0;
+
+            scoreArray = [];
+            answers = { 
+                answer1 : 0,
+                answer2 : 0,
+                answer3 : 0,
+                answer4 : 0,
+                answer5 : 0,
+                answer6 : 0,
+                answer7 : 0,
+                answer8 : 0,
+                answer9 : 0,
+                answer10 : 0
+            };
 
             //get back matched spirit animal	
         }).then(function(match) {
@@ -111,4 +103,9 @@ $(document).ready(function() {
         });
     });
 
+    //back to home button
+    $("#backToHome").on("click", function() {
+        $("#userName").val('');
+        $("#userPhoto").val('');
+    });
 });
