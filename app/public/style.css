@@ -54,15 +54,16 @@ li:hover{
 }
 #submitAnswers{
 	margin-bottom: 40px;
-	background-color: #42a2d9;
-	color:#6b63af;
+	background-color: #6b63af;
+	color:#0071ac;
 	border: solid 1px #6b63af;
 	height:50px;
-	width:200px;
+	width:150px;
+	margin-top:24px;
 }
-#submitAnswers:hover{
-	background-color: #6b63af;
-	color:#0071ac;	
+#submitAnswers:hover{	
+	background-color: #42a2d9;
+	color:#6b63af;
 	border: solid 1px #0071ac;
 }
 .dropdown-toggle{
@@ -135,5 +136,12 @@ li:hover{
 #animalImg{
 	width:100%;
 }
-
+.navbar{
+	vertical-align: middle;
+	color:#1a2e47;
+	background-color: #83e2fe;
+}
+#copyright{
+	margin-top: 13px;
+}
 

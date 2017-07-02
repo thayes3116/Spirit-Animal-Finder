@@ -38,7 +38,7 @@ $(document).ready(function() {
             console.log(userName);
             $("#pictureDiv").attr("src", userPhoto);
             var welcome = $("<h3>").html("Welcome " + userName);
-            $("#userDiv").append(welcome);
+            $("#welcome").html(welcome);
     };
 
     //home page submit button
