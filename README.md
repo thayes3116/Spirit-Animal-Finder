@@ -23,7 +23,7 @@ Differences: 4,2,0,2,4
 
 Sum of the differences:12
 
-After I find the sum of the differences between the user and all the animals, I find the animal with the lowest sum of differences and that is the match.
+After calculating the sum of the differences between the user and each animal, I find the animal with the lowest sum of differences and that is the match.
 
 The second part of the application is that the user information is saved and added to the database.  This is the basis for survey driven dating or friend finding applications.  For my application, you can then becaome someone elses spirit animal!!
 
