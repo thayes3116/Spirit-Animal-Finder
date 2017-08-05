@@ -1,4 +1,4 @@
-# Friend_Finder
+# Spirit Animal Finder
 
 Friend_Finder is a full stack website. Included in the applcation is aback back end: api database, routers, server.js, and front end: html, bootstrap/css, and app.js.
 
